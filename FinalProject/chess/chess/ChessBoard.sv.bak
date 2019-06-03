@@ -1,0 +1,25 @@
+module ChessBoard  ( input              clk,
+                     input        [6:0] in ,
+                     output logic [7:0] out );
+
+ // This module will be synthesized into a RAM
+    always_ff @ (posedge clk)
+    case (in)
+    8'h00: out <= 8'h52;    8'h01: out <= 8'h09;    8'h02: out <= 8'h6a;    8'h03: out <= 8'hd5;
+    8'h04: out <= 8'h30;    8'h05: out <= 8'h36;    8'h06: out <= 8'ha5;    8'h07: out <= 8'h38;
+    8'h08: out <= 8'hbf;    8'h09: out <= 8'h40;    8'h0a: out <= 8'ha3;    8'h0b: out <= 8'h9e;
+    8'h0c: out <= 8'h81;    8'h0d: out <= 8'hf3;    8'h0e: out <= 8'hd7;    8'h0f: out <= 8'hfb;
+    8'h10: out <= 8'h7c;    8'h11: out <= 8'he3;    8'h12: out <= 8'h39;    8'h13: out <= 8'h82;
+    8'h14: out <= 8'h9b;    8'h15: out <= 8'h2f;    8'h16: out <= 8'hff;    8'h17: out <= 8'h87;
+    8'h18: out <= 8'h34;    8'h19: out <= 8'h8e;    8'h1a: out <= 8'h43;    8'h1b: out <= 8'h44;
+    8'h1c: out <= 8'hc4;    8'h1d: out <= 8'hde;    8'h1e: out <= 8'he9;    8'h1f: out <= 8'hcb;
+    8'h20: out <= 8'h54;    8'h21: out <= 8'h7b;    8'h22: out <= 8'h94;    8'h23: out <= 8'h32;
+    8'h24: out <= 8'ha6;    8'h25: out <= 8'hc2;    8'h26: out <= 8'h23;    8'h27: out <= 8'h3d;
+    8'h28: out <= 8'hee;    8'h29: out <= 8'h4c;    8'h2a: out <= 8'h95;    8'h2b: out <= 8'h0b;
+    8'h2c: out <= 8'h42;    8'h2d: out <= 8'hfa;    8'h2e: out <= 8'hc3;    8'h2f: out <= 8'h4e;
+    8'h30: out <= 8'h08;    8'h31: out <= 8'h2e;    8'h32: out <= 8'ha1;    8'h33: out <= 8'h66;
+    8'h34: out <= 8'h28;    8'h35: out <= 8'hd9;    8'h36: out <= 8'h24;    8'h37: out <= 8'hb2;
+    8'h38: out <= 8'h76;    8'h39: out <= 8'h5b;    8'h3a: out <= 8'ha2;    8'h3b: out <= 8'h49;
+    8'h3c: out <= 8'h6d;    8'h3d: out <= 8'h8b;    8'h3e: out <= 8'hd1;    8'h3f: out <= 8'h25; 
+    endcase
+endmodule
